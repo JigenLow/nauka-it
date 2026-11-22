@@ -1,0 +1,17 @@
+-----PYTHON-----
+---22.11.2026---
+
+#Lekcja 1 
+
+Zmienna robocza i jej działanie, oraz sztuczka w Pythonie ;)
+
+box_a = "kawa"
+box_b = "herbata"
+print('przed:',box_a,box_b)
+box_c = box_a #zmienna robocza do przechowywania wartości tymczasowo
+box_a = box_b
+box_b = box_c
+print('po:',box_a,box_b)
+
+box_b, box_a = box_a, box_b # nadaje nową wartość dla zmiennej box_b -> box_a, a dla zmiennej box_a -> box_b
+print(box_a,box_b)

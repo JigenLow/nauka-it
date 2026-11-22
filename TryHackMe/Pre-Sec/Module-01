@@ -1,0 +1,13 @@
+-----INTRODUCTION-----
+------22.11.2026------
+
+#1 - Offensive Security Info
+
+Dirbuster - OpenSource oprogramowanie do znajdowania luk w directory strony
+
+Przykład użycia: sudo dirb https://url.com
+
+#2 - Defensive Security Info
+
+Terminal - Skanowanie podejrzanej aktywności, blokowanie adresów IP, blokowanie requestów
+

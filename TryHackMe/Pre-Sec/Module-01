@@ -11,3 +11,16 @@ Przykład użycia: sudo dirb https://url.com
 
 Terminal - Skanowanie podejrzanej aktywności, blokowanie adresów IP, blokowanie requestów
 
+#3 - Search Skills
+
+Shodan - skaner aktywności online; pokazuje informacje o serwerach i Internet of Things
+VirusTotal - Pokazuje poziom niebezpieczeństwa pliku poprzez podanie listy klasyfikującej jako zagrożenia największych programów antywirusowych
+Common Vulnerabilities and Exposures - lista popularnych explotów istniejących w oprogramowaniu
+GithHub - :)
+
+#3.1 - Linux Manual
+nc - obsługa portów TCP i UDP
+
+nc host.com 2334 - otwiera połączenie TCP z hostem na danym porcie
+nc -u host.com 2331 - otwiera połączenie UDP z hostem na danym porcie
+

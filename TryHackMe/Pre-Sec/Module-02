@@ -1,0 +1,20 @@
+-----LINUX-----
+--23.11.2026--
+
+
+#1 Linux Basics
+
+ls - list directory - wypisuje obecne folder
+cd - change directory - zmienia folder 
+cat file.txt - pokazuje zawartość pliku
+pwd - print working directory - pokazuje obecną ścieżke
+
+find file.txt - szuka po nazwie pliku
+grep test file.txt - szuka w pliku o nazwie
+
+#1.1 Shell operators
+
+& - Nie czeka na zakończenie obecnej komendy - pracuje w tle
+&& - używa obydwu komend, ale czeka aż pierwsza się najpierw zakończy 
+> - napidsuje dane w pliku
+>> - dodaje dane do pliku

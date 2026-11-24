@@ -1,0 +1,84 @@
+-----PYTHON-----
+---24.11.2026---
+
+
+#1 Typy zmiennych
+
+int - integer - całkowita
+str - string - ciąg znaków
+float - float - zmiennoprzecinkowa
+long - long - duże liczby całkowite
+complex - complex - liczby zespolone
+ord - wartość w kodzie ASCII
+chr - wartość znaku
+
+#2 Obliczanie liczb binarnych
+
+a = int(input("podaj liczbe:"))
+while a != 0:
+    a%2
+    print(a, "\t |", a%2)
+    a = a//2
+
+Najpierw podajemy liczbe. Gdy liczba jest różna od zera zachodzi pętla, która dzieli podaną liczbę przez 2 i zwraca reszte. 
+Print drukuje liczbę a, a obok drukuje resztę z niej.
+  Linijka 19 jest tutaj zbędna i mogłaby od razu wejść w linijke print, ale poprzednio napotkałem błąd, który odwiódł mnie od tego pomysłu :o
+Następnie nadajemy nową wartość podanej liczbie - podzieloną z całością przez 2
+
+#3 Największy wspólny dzielnik
+
+print("podaj dwie liczby naturalne")
+
+a = int(input("Podaj a:"))
+b = int(input("Podaj b:"))
+
+r = a % b
+if r<b:             # - dodano podczas testowania kodu; wynik przy a = 99 i b = 3 nie wyświetlał się ponieważ przed pętlą zachodziło r = 0
+    print(b)
+
+
+while r != 0:
+    r = a % b
+    print("reszta",r)
+    a = b
+    print("Nowe a", a)
+    b = r
+    print("Nowe b", b)
+    if r == 0:
+        print(b)
+
+Podobny schemat zachodzi tutaj z tym, że wynik z dzielenia dwóch liczb to nowa zmienna, która obliczana jest w pętli dopóki nie jest równa zero. 
+Ważnym elementem jest tutaj nadpisywanie poprzednich wartości liczb a oraz b.
+Warunek if na końcu podaje NWD podczas przełamania pętli.
+
+#4 Pętla for
+
+for i in range(1,4):
+print("Liczba: ", i)
+
+Domyślny krok dla tej pętli to jeden, w innym przypadku należałoby dodać wartość kroku po przecinku.
+Pętla uruchamia się dopóki i nie osiągnie wartości 4
+
+#5 Hipoteza Collatza
+
+c0 = int(input("Podaj dodatnią liczbę całkowitą:"))
+kroki = 0
+if c0>0:
+    while c0 !=1:
+        if c0%2==0:
+            c0 = c0/2
+            kroki = kroki +1
+            print("Liczba była parzysta, nowa wartość to:",c0)
+        elif c0%2!=0:  
+            print("Wartość liczby to:", c0)
+            c0 = 3 * c0 +1
+            print("Wartość liczby po operacji:", c0)
+            kroki = kroki +1
+        
+print("Liczba kroków wynosiła :", kroki)
+
+
+Program sprawdza hipoteze Collatza, że każda liczby dąży do jedynki ( nie wiem dlaczego nikt tego jeszcze nie udowodnił, wydaje się mega łatwe )
+
+Najciekawszym elementem programu dla mnie było sprawdzanie liczby kroków, chwilę zajeło mi, żeby dojść do tego, że print liczby kroków musi występować po pętli.
+
